@@ -4,7 +4,8 @@ const {Schema,model} = require("mongoose");
 
 
 // Schema Design
-const calculatorSchema = new Schema({
+const calculatorSchema = new Schema(
+    {
     operation: {type: String, required: true},
     OperandX: {type: Number, required: true},
     OperandY: {type: Number, required: true},
